@@ -1,6 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+class Movie(models.Model):
+    movie_name = models.CharField(max_length=100)
+    description = models.TextField()
+    duration = models.DurationField()
+    price = models.FloatField()
+    RatingType = models.TextChoices("RatingType", "G PG PG-13 R")
+    rating = models.CharField(choices=RatingType)
+    genre = models.CharField(max_length=30)
+
 class Review(models.Model):
     id = models.AutoField(primary_key=True)
     comment = models.TextField()
