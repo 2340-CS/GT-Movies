@@ -6,7 +6,7 @@ class Movie(models.Model):
     description = models.TextField()
     duration = models.DurationField()
     price = models.FloatField()
-    RatingType = models.TextChoices("RatingType", "G PG PG-13 R")
+    rating_type = models.TextChoices("RatingType", "G PG PG-13 R")
     rating = models.CharField(choices=RatingType)
     genre = models.CharField(max_length=30)
 
