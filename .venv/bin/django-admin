@@ -1,4 +1,4 @@
-#!/Users/krishkittur/Documents/CS2340/GT-Movies/.venv/bin/python3
+#!/Users/jocha/Documents/CS2340/GT-Movies/.venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
