@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="p-3">
+  <div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6 mx-auto mb-3 text-center">
+            <img src="{{ template_data.movie.image.url }}" class="rounded img-card-400" />
+        </div>
+        <div class="col-md-6 mx-auto mb-3">
+          <h2>{{ template_data.movie.name }} ({{template_data.movie.release}})</h2>
+          <p>{{template_data.movie.director}} &#x2022; [average rating]</p>
+          <div style = "display:flex; justify-content: left; align-items: baseline;">
+            <button style = "padding-left: 2.5em; padding-right: 2.5em; background-color: #cca845; color: whitesmoke; border-radius: 0.5em; border-color:#e6c56c; ">Buy ${{template_data.movie.price}}</button> 
+            <!-- <button style = "padding-left: 2.5em; padding-right: 2.5em;">Write a Review</button> -->
+            
+          </div>
+          <hr />
+          <p><b>Description:</b> {{ template_data.movie.description }}</p>
+          <br>
+          <div style = "overflow-y: scroll; max-height: 20em;">
+            <p><b>Reviews:</b> [Call to Reviews here] </p>
+            <br>
+          </div>
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+{% endblock content %}
