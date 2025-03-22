@@ -1,5 +1,5 @@
 ## Project Description
-[Put project description here]
+A web application that allows users to access information about movies and place order to purchase them. Users will be able to list, create, edit, and delete movie reviews. The application features a user-friendly interface and provides useful information about each movie, such as its name, price, description, and an image.
 
 ## Development Set-Up Instructions
 1. Make sure you have python 3.9.6 or above installed: https://www.python.org/downloads/
